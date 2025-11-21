@@ -10,14 +10,22 @@ export function DesktopTopNav() {
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <div className="flex items-center gap-6">
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-bluePrimary-500 to-bluePrimary-300 text-white grid place-items-center font-bold shadow-glass">f</div>
-            <span className="font-semibold text-slate-900 dark:text-white">FaceNext</span>
+            <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-bluePrimary-500 to-bluePrimary-300 text-white grid place-items-center font-bold shadow-glass">
+              f
+            </div>
+            <span className="font-semibold text-slate-900 dark:text-white">facebook</span>
           </Link>
           <nav className="hidden md:flex items-center gap-4 text-sm text-slate-600 dark:text-slate-300">
-            <Link className="hover:text-bluePrimary-500" to="/">Connect</Link>
+            <Link className="hover:text-bluePrimary-500 flex items-center gap-2" to="/">
+              <Icon name="MessageSquare" className="w-4 h-4" />
+              Connect
+            </Link>
             <Link className="hover:text-bluePrimary-500" to="/discover">Discover</Link>
             <Link className="hover:text-bluePrimary-500" to="/communities">Communities</Link>
-            <Link className="hover:text-bluePrimary-500" to="/dashboard">Manage</Link>
+            <Link className="hover:text-bluePrimary-500 flex items-center gap-2" to="/dashboard">
+              <Icon name="Music" className="w-4 h-4" />
+              Manage
+            </Link>
           </nav>
         </div>
         <div className="flex items-center gap-3">
