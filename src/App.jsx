@@ -10,6 +10,10 @@ import NotificationsMessages from './components/NotificationsMessages'
 import Dashboard from './components/Dashboard'
 import Palette from './components/Palette'
 import Music from './components/Music'
+import Groups from './components/Groups'
+import Threads from './components/Threads'
+import Reels from './components/Reels'
+import Games from './components/Games'
 
 function AppShell() {
   return (
@@ -24,6 +28,10 @@ function AppShell() {
         <Route path="/inbox" element={<NotificationsMessages />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/music" element={<Music />} />
+        <Route path="/groups" element={<Groups />} />
+        <Route path="/threads" element={<Threads />} />
+        <Route path="/reels" element={<Reels />} />
+        <Route path="/games" element={<Games />} />
         <Route path="/style" element={<div className='max-w-6xl mx-auto px-6 py-6 space-y-6'><Palette /></div>} />
       </Routes>
       <MobileBottomNav />

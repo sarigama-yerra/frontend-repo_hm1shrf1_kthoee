@@ -16,15 +16,25 @@ export function DesktopTopNav() {
             <span className="font-semibold text-slate-900 dark:text-white">facebook</span>
           </Link>
           <nav className="hidden md:flex items-center gap-4 text-sm text-slate-600 dark:text-slate-300">
-            <Link className="hover:text-bluePrimary-500 flex items-center gap-2" to="/">
-              <Icon name="MessageSquare" className="w-4 h-4" />
-              Connect
+            <Link className="hover:text-bluePrimary-500 flex items-center gap-2" to="/groups">
+              <Icon name="UsersRound" className="w-4 h-4" />
+              Groups
             </Link>
-            <Link className="hover:text-bluePrimary-500" to="/discover">Discover</Link>
-            <Link className="hover:text-bluePrimary-500" to="/communities">Communities</Link>
-            <Link className="hover:text-bluePrimary-500 flex items-center gap-2" to="/dashboard">
+            <Link className="hover:text-bluePrimary-500 flex items-center gap-2" to="/threads">
+              <Icon name="Hash" className="w-4 h-4" />
+              Threads
+            </Link>
+            <Link className="hover:text-bluePrimary-500 flex items-center gap-2" to="/reels">
+              <Icon name="PlayCircle" className="w-4 h-4" />
+              Reels
+            </Link>
+            <Link className="hover:text-bluePrimary-500 flex items-center gap-2" to="/games">
+              <Icon name="Gamepad2" className="w-4 h-4" />
+              Games
+            </Link>
+            <Link className="hover:text-bluePrimary-500 flex items-center gap-2" to="/music">
               <Icon name="Music" className="w-4 h-4" />
-              Manage
+              Music
             </Link>
           </nav>
         </div>
@@ -50,8 +60,9 @@ export function MobileBottomNav() {
   const location = useLocation();
   const items = [
     { to: '/', icon: 'Home', label: 'Home' },
-    { to: '/discover', icon: 'Compass', label: 'Discover' },
-    { to: '/communities', icon: 'UsersRound', label: 'Communities' },
+    { to: '/reels', icon: 'PlayCircle', label: 'Reels' },
+    { to: '/games', icon: 'Gamepad2', label: 'Games' },
+    { to: '/music', icon: 'Music', label: 'Music' },
     { to: '/profile', icon: 'User', label: 'Profile' },
   ];
   return (

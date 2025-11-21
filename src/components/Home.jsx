@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, Button, Input } from './ComponentsLibrary';
 import { Icon } from './Icons';
+import ChatBox from './ChatBox';
 
 function StoryAvatar({ name }) {
   return (
@@ -106,6 +107,8 @@ export default function Home() {
             ))}
           </div>
         </Card>
+        {/* Chat box under Events */}
+        <ChatBox embedded className="" />
       </div>
     </div>
   );
